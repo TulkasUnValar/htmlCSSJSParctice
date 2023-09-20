@@ -1,0 +1,1 @@
+document.write("This is JS document code, donde podemos encontar toda la chigada de la madre");
