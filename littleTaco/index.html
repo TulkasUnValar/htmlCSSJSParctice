@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Tulkas">
+  <meta name="description" content="This page is about the Little Taco Shop">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Taco Shop</title>
+  <link rel="icon" href="img/tacoLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Little Taco Shop</h1>
+
+    <nav aria-label="primary-navigation">
+      <ul>
+        <li>
+          <a href="#about">About <abbr title="Little Taco Shop">LTS</abbr></a>
+        </li>
+        <li>
+          <a href="#menu">Our Menu</a>
+        </li>
+        <li>
+          <a href="hours.html">Store hours</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <figure>
+      <img src="img/tacosDrink.jpg" alt="Tacos and drink" title="Tacos and drink" width="400" height="267">
+      <figcaption>
+        Tacos and a drink
+      </figcaption>  
+    </figure>
+  </header>
+
+  <hr>
+  
+  <main>
+    <article id="about">
+      <h2>About LTS</h2>
+      <p>
+        <strong>LTS</strong> was founded in <time datetime="2022">2022</time>. Our shop was built from a <strong>love of tacos</strong> &#x1f32e &#x1f32e &#x1f32e. We hope our shop adds a unique and interesting place to our little town. 
+      </p>
+
+      <section>
+        <aside>
+          <h3>Taco trivia</h3>
+          <details>
+            <summary>
+              When did tacos first appear in the Unite States?
+            </summary>
+            <p>
+              Jeffrey M. Pilcher, taco historian and professor of history at the University of Minnesota, says the earliest mention of taco in United States are in a newspaper from <time datetime="1905">1905</time>. (Source: <cite title="Evolucion del Taco"><a href="https://www.gob.mx/agricultura/articulos/la-evolucion-del-taco#:~:text=Su%20historia%20comienza%20con%20las,la%20comida%20envuelta%20en%20tortillas."><i>Smithsonian Magazine</i></a></cite>) 
+            </p>
+          </details>
+        </aside>
+      </section>    
+    </article>
+    
+    <hr>
+    
+    <article id="menu">
+      <section>
+        <h2>Our Menu</h2>
+        <table>
+          <caption>Our Tacos</caption>
+          <thead>
+            <tr>
+              <th id="tacos" scope="col">Tacos</th>
+              <th scope="col"> <abbr title="Quantity">Qty</abbr></th> <!--abbr: explain abbreviations-->
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+
+            <tbody>
+              <tr>
+                <th id="crunchy" scope="row" rowspan="4">Crunchy</th>
+                <tr>
+                  <td>1</td>
+                  <td>$1.50</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>$3.25</td>
+                </tr>
+              </tr>
+
+              <tr>
+                <th id="soft" scope="row" rowspan="4">Soft</th>
+                <tr>
+                  <td>1</td>
+                  <td>$2.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>$4.50</td>
+                </tr>
+              </tr>
+            </tbody>
+            
+            <tfoot>
+              <tr>
+                <td colspan="4">Chips &amp; salsa $2</td>
+              </tr>
+            </tfoot>
+        </table>
+      </section>
+    </article>  
+  </main>
+
+  <br>
+
+  <footer>
+    <p>Copyright &copy; The Little Taco Shop</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+</body>
+</html>

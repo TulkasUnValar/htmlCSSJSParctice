@@ -1,0 +1,131 @@
+/*font-style import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"');
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root {
+  /* FONT */
+  --FF: "Press Start 2P", system-ui;
+  --FS: 1.5rem;
+  
+  /* COLOR */
+  --BGCOLOR: #1A1D1A;
+  --ALT-BGCOLOR: #1E293B;
+  --RADIAL-COLOR: whitesmoke;
+  --LIGHT-COLOR: whitesmoke;
+  --DARK-COLOR: #03120E;
+  --BLACK-COLOR: black;
+  --LBLUE-COLOR: #407076;
+
+  /* GENERAL */
+  --PADDING-05: 0.5rem;
+  --PADDING-1: 1rem;
+  --SHADOWS: 0 8px 5px -5px var(--BLACK-COLOR);
+  --BORDER: 2px solid var(--DARK-COLOR);
+
+  /* SQUARE */
+  --SQUARE-BGCOLOR: papayawhip;
+  --SQUARE-SIZE: max(150px, 20vw);
+} /* To define variables inside */
+
+@media (prefers-color-scheme: Light) {
+  :root {
+  --BGCOLOR: #020201;
+  --ALT-BGCOLOR: #1F2421;
+  --RADIAL-COLOR: #514F59;
+  --LIGHT-COLOR: whitesmoke;
+  --SQUARE-BGCOLOR: #9F87E8;
+  }
+} /* Light mode */
+
+/* GENERAL STYLES */
+body {
+  background-color: var(--BGCOLOR);
+  min-height: 100vh;
+  background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR)); /* radial-gradient function, var() = reference function */
+  display:flex;
+  flex-direction: column;
+
+  font: var(--FS) var(--FF);
+  color: var(--DARK-COLOR);
+}
+
+header, nav, footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header, footer {
+  position: sticky; /* Keep position, don´t move */
+  background-color: var(--ALT-BGCOLOR);
+  color: var(--RADIAL-COLOR);
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: var(--LIGHT-COLOR);
+  padding: var(--PADDING-05);
+  border-bottom: var(--BORDER);
+  font-weight: bolder;
+  box-shadow: var(--SHADOWS);
+  color: var(--BLACK-COLOR);
+
+  display: flex;
+  justify-content: space-evenly; /* space between a*/
+}
+
+nav a, nav a:visited {
+  color: var(--BLACK-COLOR);
+}
+
+nav a:hover, nav a:focus {
+  color: var(--LBLUE-COLOR);
+}
+
+main {
+  flex-grow: 1;
+  
+  display: flex;
+  justify-content: space-evenly; 
+  flex-flow: row wrap;
+  align-items: center;
+  
+  flex-direction: column;
+  gap: min(4vw, 15px);
+  padding: 10px 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* FEATURES */
+.square {
+  background-color: var(--SQUARE-BGCOLOR);
+  width: var(--SQUARE-SIZE);
+  height: var(--SQUARE-SIZE);
+  border: var(--BORDER);
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  font-size: var(--FS);
+  box-shadow: var(--SHADOWS);
+}
+
+.square--highlight {
+  --SQUARE-BGCOLOR: #3D5A80;
+}
+
+/* || MEDIA QUERY */
+/* || SMALL */

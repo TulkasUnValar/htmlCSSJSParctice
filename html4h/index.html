@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Is not seen inside the browser --> 
+  <meta charset="UTF-8">
+  <meta name="author" content="Tulkas">
+  <meta name="description" content="This page contains all the things I am learning about HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first web page</title>
+  <link rel="icon" href="./img/html5.png" type="image/x-icon"> 
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+  <header class="container"> <!--Grab in a header element. Top page level-->
+    <h1>Goals for the year</h1> <!--Only one h1 element. High priority. The header gives semantic topic, order, giving meaning to the content. No more that 3 levels of h-->
+    
+    <nav aria-label="primary-navigation"> <!--Navigation area, more that one per page. Use label. -->
+      <!--<h2 id="primary-navigation">Primary navigation</h2> In CSS call the id=primary-navigation using (.)-->
+      <h2>Goals</h2>
+      <ul>
+        <li>
+          <a href="#html">Learn HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a vacation</a>
+        </li>
+        <li>
+          <a href="#contact">Contact me</a>  
+        </li>  
+      </ul>
+    </nav>
+  </header>
+
+  <hr> <!--Divider line-->
+
+  <main class="container"> <!--nly one main element per page-->
+    <article id="html"> <!--Article element, section element is generic-->
+    
+      <h2 tabindex="-1">I´m ready to learn HTML</h2>
+      <p>This is my first web <span class="highlight">page.</span></p> <!--<p>: creates a extra space-->
+      
+      <div class="circle"></div>
+      
+      <div>
+        <img src="./img/html5.png" alt="HTML 5 logo" title="I´m learning HTML5" width="200" height="200"> <!--src(source): where can grab the image, alt(): help to see the image and other functions-->
+        <figure>
+          <figcaption> <!--Can be put at the beginning or th end of the image-->
+            An example of HTML5 code
+          </figcaption>
+          <p>
+            <code> <!--Help to display code, HTML code-->
+              &lt;h1&gt;Hello world&lt;/h1&gt;
+            </code>
+          </p>
+        </figure>
+      </div>
+      
+      <section>
+        <h3>My diary schedule</h3>
+        <p>Let me tell you how:</p>
+        <!--<br>: Block element-->
+        <ol start="5" reversed> <!--Order list--> 
+          <li>...I´ll learn more about web dev.</li> <!--List--> 
+          <li value="26">...I'll plan out my schedule.</li>
+          <li>...I´ll use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/es/">MDN</a></abbr></li> 
+        </ol>
+        <aside> <!--Semantic element, side bar-->
+          <details>
+            <summary>
+              Guess the <mark>numbers of hours</mark> I code per day
+            </summary>
+            <p>
+              I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning
+            </p>
+          </details>
+        </aside>
+        
+        <br>
+        
+        <table>
+          <caption>My daily schedule</caption> <!--What about the table is-->
+          <thead><!--Header-->
+            <tr>
+              <th>&nbsp;</th>
+              <th id="time" scope="col">Time</th> <!--scope toi column. We can provide (id) to each header to use in other technologies-->
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+
+            <tr><!--Table rode-->
+              <th id="morming" scope="row">Morning</th> <!--scope to column, semantic-->
+              <td>
+                <time datetime="08:00">8am</time>
+                <time datetime="11:00">11am</time> 
+              </td>
+              <td>Write code</td>
+            </tr>
+
+            <tr><!--Table rode-->
+              <th id="morning" scope="row">Break</th> <!--scope to row, semantic-->
+              <td>
+                <time datetime="11:00">11am</time>
+                <time datetime="12:00">12am</time> 
+              </td>  
+              <td>Eat lunch</td>
+            </tr>
+
+            <tr><!--Table rode-->
+              <th id="afternoon" scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12am</time>
+                <time datetime="17:00">5pm</time> 
+              </td>  
+              <td>Study for other courses</td>
+            </tr>
+            
+            <tr>
+              <th id="evening" scope="row">Evening</th>
+              <td rowspan="2">All other times</td>
+              <td>Free time</td>
+            </tr>
+
+            <tr>
+              <th id="night" scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">And tha´s what I do every day, 5 days a week. Just eat, sleep, code ...and recharge! </td>
+            </tr>
+          </tfoot>
+
+        </table>
+      </section>
+    
+    </article>
+
+    <hr>
+
+  <!--br*100: allow multiply elements-->
+  
+    <article id="vacation">
+    
+      <h2>I´m also planing vacations</h2>
+      <p>I´m been working hard and <em>really need a getaway.</em></p> <!--em element: italic-->
+      <p>I live in <abbr title="Toronto">Toronto</abbr> so I want visit the beach.</p>  
+      
+      <section>
+        <h3>Places I like to visit</h3>
+        <ul> <!--unordered list-->
+          <li>
+            <p>I´ve heard good things about Brazil.</p>
+            <figure><!---->
+              <img src="img/caribbean.jpg" alt="caribbean beach" title="I want to visit Caribbean beach" width="400" height="225" loading="lazy">
+              <figcaption><!--figcaption in related to the image, text indented to the image-->
+                Brazil beach gateway
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <p>I´ve heard goo things about going there</p>
+            <address>
+                Royal Ontario Museum<br>
+                Casa Loma<br>
+                Ripley´s Aquarium Canada<br>
+            </address>
+            <figure>
+              <img src="img/vacations.jpg" alt="Brazil vacation" title="It´s a 5 o'clock somewhere!" 
+              width="400" height="255" loading="lazy">
+              <figcaption>
+                A Brazil vacation image
+              </figcaption>
+            </figure>  
+          </li>
+        </ul>
+      </section>  
+      
+      <!--TODO: Add more places-->
+      
+      <!--<div></div> Think in div like a section with out semantic meaning, we can add additional attribute to help assistance technologies
+      <span></span>-->
+      <section>
+        <h3>Places I want to avoid</h3>
+        <dl> <!--Description list-->
+          <dt>North Pole</dt> <!--strong element: bold. <dl>: description term--> 
+          <dd>I hear this is <strong>cold</strong>.</dd><!--description detail-->  
+          
+          <dt>South Pole</dt> <!--strong element: bold. <dl>: description term--> 
+          <dd>This is also <strong>cold</strong>.</dd><!--description detail-->
+          
+          <dt>Mountain top</dt> <!--strong element: bold. <dl>: description term--> 
+          <dd>This is also <strong>cold</strong>.</dd><!--description detail-->    
+        </dl>
+      </section>
+    
+    </article>
+
+    <hr>
+
+    <article id="contact">
+      <h2>Contact me</h2>
+      <p>I´d really like to hear about you!</p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset> <!--Form attribute, used like section-->
+          <legend>Personal info</legend> <!--Legend of the fieldset-->
+          <p>
+            <label for="firstName">First name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Dave" autocomplete="on" required autofocus> <!--"id" shall to mach with the "for" in the label. Only one input can have autofocus-->
+          </p>
+
+          <P>
+            <label for="lastName">Last name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Batista" autocomplete="on" required>
+          </P>
+          
+          <P>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your secret" required>
+          </P>
+          
+          <P>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+          </P>
+          
+          <P>
+            <label for="decade">Favorite decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+          </P>
+
+          <P>
+            <label for="coffee">Favorite coffees:</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular coffee</option>  
+                <option value="iced coffee">Iced coffee</option>  
+              </optgroup>  
+              <optgroup label="Espresso drinks">
+                <option value="latte" selected>Latte</option>  
+                <option value="cappuccino">Cappuccino</option>  
+                <option value="cortado">Cortado</option>  
+                <option value="americano">Americano</option>  
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+          </P>
+
+          <!-- <P>
+            <label for="cofee">Favorite coffee:</label>
+            <input name="coffee" id="coffee" list="coffee-list">
+              <datalist id="coffee-list">
+                <option value="regular coffee">  
+                <option value="iced coffee">  
+                <option value="latte" selected>
+                <option value="cappuccino">  
+                <option value="cortado">  
+                <option value="americano">  
+                <option value="other">
+              </datalist>
+            </input>
+          </P> -->
+        </fieldset> 
+        <br>
+        <fieldset>
+          <legend>What is your favorite food?</legend>
+          
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos"> <!--In type="radio" be sure that the attribute names is the same value-->
+            <label for="tacos">Tacos</label>
+          </p>
+          
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          
+          <p>
+            <input type="radio" name="food" id="other-food" value="other-food">
+            <label for="other-food">Other</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          
+          <p>
+            <input type="checkbox" name="pets" id="fish" value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          
+          <p>
+            <input type="checkbox" name="pets" id="dragon" value="dragon">
+            <label for="dragon">Dog</label>
+          </p>
+          
+          <p>
+            <input type="checkbox" name="pets" id="other-pet" value="other-pet">
+            <label for="other-pet">Other pet</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Send me a note</legend>
+          <label for="message">Your message</label>
+          <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </article>
+  </main>
+  
+  <hr>
+  <footer> <!--Footer page-->
+    <p>  
+      &lt;&lt;&lt;&lt; &copy; <a href="about.html">Tulkas</a> &lt;&lt;&lt;&lt;
+    </p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+  <!--Focus: When the user uses TAB in the items (buttons, links) in the web, it needs to have an order, in that way, we need to organize the code to get a better tab experience. Keeping hight in the DOM (Document Object Model)-->
+  <div>Not in the tab order</div>
+  <div tabindex="0">In the tab order</div> <!--//global attribute allows developers to make HTML elements focusable, allow or prevent them from being sequentially focusable-->
+  <div tabindex="-1">Not in the tab order (but is focusable)</div> <!--Focusable using JavaScript-->
+  <div>Ahead of everything in the tab order</div>
+  <button>Totes focusable</button>
+
+  <script>
+    document.querySelector('[tabindex="-1"]').focus() //Focusable only, and just after the web load
+  </script>
+
+  <p></p>
+  <!--Try to use norma buttons, no custom buttons (like <div> using tabindex="0"). Using buttons allow us to Focus.
+  Disable work only in buttons-->  
+  <div class="fancy" tabindex="0" disabled>Sing Up!</div>
+  <button class="fancy" disabled>Sing Up 4 Real!</button>
+
+  <!--JavaScript, listen event click on button-->
+  <script>
+    var btns = Array.from(document.querySelectorAll('.fancy'));
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        alert('I was clicked');
+      }); 
+    });
+  </script>
+</body>
+</html>
+
+<!--Use validator.w3.org to HTML check. It look errors or warnings to show.-->

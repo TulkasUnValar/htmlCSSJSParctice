@@ -1,0 +1,68 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5% 10%;
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  line-height: 1.5;
+} 
+
+/*All elements in main, only one body per page*/
+main {
+  background-color: #333;
+}
+
+/*CSS menu*/
+nav {
+  border: 2px solid #011627;
+  border-radius: 20px;
+  margin: 0 auto 10px;
+  max-width: 600px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+}
+
+h2 {
+  padding: 10px;
+  background-color: gold;
+  border-radius: 20px 20px 0 0;
+  color: #011627;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-top: 1px solid #011627;
+}
+
+li a {
+  display: block;
+}
+
+li a, 
+li a:visited {
+  text-decoration: none;
+  color: #011627;
+}
+
+li a:hover {
+  background-color: #011627;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+li:last-child a {
+  border-radius: 0 0 20px 20px;
+}

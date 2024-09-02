@@ -1,0 +1,120 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;  
+  color: #9984D4;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dashed #9984D4;;
+  width: 75vh;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 2px dashed #9984D4;;
+  width: 40vh;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.absolute {
+  background-color: #D81E5B;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 1; /* Change z position */
+}
+
+.relative {
+  background-color: #F0544F;
+  position: relative;
+  top: 300px;
+  left: 100px;
+}
+
+.fixed {
+  background-color: #C6D8D3;
+  position: fixed;
+  top: 50px;
+  left: 1000px;
+}
+
+.sticky {
+  background-color: #B91372;
+  position: sticky;
+  top: 450px;
+  left: 1100px;
+}
+
+/* /////////////////////////////// */
+
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: #41EAD4;
+}
+
+.red {
+  background-color: #FF0022;
+}
+
+.green {
+  background-color: #3A015C;
+}
+
+header, footer {
+  color: antiquewhite;
+  text-align: center;
+  height: 100px;
+  
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  background-color: #5E4C5A;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a.visited {
+  color: #E1F0C4;
+}
+
+.social {
+  background-color: #55917F;
+  color: aliceblue;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}

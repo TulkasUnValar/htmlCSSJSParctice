@@ -1,0 +1,45 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #9984D4;
+}
+
+section {
+  background-color:bisque ;
+  border: 3px solid midnightblue;
+  padding: 1rem;
+  display: flow-root;
+}
+.block {
+  width: 30vw;
+  height: 30vw;
+  background-color: black;
+  padding: 1rem;
+}
+
+.left {
+  float:left;
+  margin-right: 1rem;
+}
+.right {
+  float:right;
+  margin-left: 1rem;
+}
+
+.clear {
+  clear:both;
+}
+
+p {
+  margin-bottom: 1rem;
+}

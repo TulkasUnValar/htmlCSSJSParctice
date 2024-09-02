@@ -1,0 +1,55 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+main {
+  background-color: aqua;
+  width: 50%;
+}
+*/
+
+p {
+  margin-bottom: 1rem;
+  background-color: lightgray;
+}
+
+.opposite {
+  display: inline-block;
+  background-color: #333;
+  color: whitesmoke;
+  /*margin-top: 100px; /*Can´t apply margin-top a inline element, we need to use display: inline-block;*/
+  /*height: 200px; /*Can´t apply height a inline element, we need to use display: inline-block;*/
+  padding: 1rem; /*Can apply padding but overflows the paragraph, we need to use display: inline-block;*/
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  text-align: right;
+  background-color: #333;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 3rem;
+}
+
+li a {
+  color: azure;
+  text-decoration: none;
+}
+
+li a:hover, li a:focus {
+  text-decoration: underline;
+}

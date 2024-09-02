@@ -1,0 +1,125 @@
+/*font-style import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"');
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLE */
+
+body {
+  background-color: #1A1D1A;
+  /* background-color: aliceblue; */
+  min-height: 100vh;
+  background-image: radial-gradient(whitesmoke, #1A1D1A);
+  display:flex;
+  flex-direction: column;
+
+  font: 2rem "Press Start 2P", system-ui;
+  color: #03120E;
+}
+
+header, main, nav, footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header, footer {
+  position: sticky;
+  background-color: #1E293B;
+  color: whitesmoke;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: whitesmoke;
+  color: #03120E;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+}
+
+
+/* Media query: allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other features or characteristics such as screen resolution or orientation, aspect ratio, browser viewport width or height, user preferences such as preferring reduced motion, data usage, or transparency. */
+
+/* Syntax:
+@media media type and (condition: breakpoint) {
+  // CSS rules
+} */
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #20FC8F;
+    background-image: radial-gradient(whitesmoke, #20FC8F)
+  }
+
+  nav {
+    display: none;
+  }
+} /* minimum width is 481px */
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #FF4000;
+    background-image: radial-gradient(whitesmoke, #FF4000)
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #F71735;
+    background-image: radial-gradient(whitesmoke, #F71735)
+  }
+}
+
+/* || XL */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #8D3B72;
+    background-image: radial-gradient(whitesmoke, #8D3B72)
+  }
+}
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height : 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: #4056F4;
+    background-image: radial-gradient(whitesmoke, #4056F4)
+  } /* min-aspect-ratio: 7/4 = orientation */
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+/* @media screen and (orientation: landscape) {
+  // CSS rules
+} vertical */
+
+/* @media screen and (min-aspect-ratio: 16/9) {
+  // CSS rules
+} ratio size 16/9 */
+
+/* Use Mark down all in one */

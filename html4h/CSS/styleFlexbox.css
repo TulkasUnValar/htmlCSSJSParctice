@@ -1,0 +1,66 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 2px solid #11001C;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; 
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-content: space-evenly;
+}
+
+.box {
+  /* min-width: 100px; */
+  min-height: 100px;
+  background-color: #11001C;
+  color: #FE5F00;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  /* Center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* /* flex-grow: 1; /* fill out the page 
+  flex-basis: 100px; /* Gives a minimum width */
+
+  /* /* flex-shrink: 1; /* shrink: encoger 
+  flex-basis: 100px; /* Gives a minimum width */
+  
+  flex: 1 1 250px; /* Three attributes: grow / shrink / basis */
+}
+
+/* .box:nth-child(2) {
+  flex-grow: 2; /* grow twice
+} */
+
+/* .box:nth-child(2) {
+  flex-shrink: 2; /* shrink: encoger
+} */
+
+.box:nth-child(2) {
+  flex: 2 2 250px;  /* Grow twice. Three attributes: grow / shrink / basis */
+  order: 1;
+}

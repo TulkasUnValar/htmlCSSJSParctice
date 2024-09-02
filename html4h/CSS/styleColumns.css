@@ -1,0 +1,45 @@
+/*font-stye import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: #333;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #9984D4;
+}
+
+.columns {
+  /* column-count: 4;
+  column-width: 250px; */
+  columns: 4 250px;
+  column-rule: 3px solid#9984D4;
+  column-gap: 20px;
+}
+
+/* p  */
+.columns p {
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  background-color: crimson;
+  color: antiquewhite;
+  padding: 1rem;
+  break-inside: avoid; /* No split h2 */
+  break-before: column; /* h2 before column */
+}
+
+.columns .quote {
+  margin-top: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #9984D4;
+  column-span: all;
+}
+
+/* break -The Dude */
+.nowrap {
+  white-space: nowrap;
+}
+

@@ -1,0 +1,209 @@
+/*font-style import*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"');
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* Not overflow container */
+  height: auto;
+}
+
+/* | UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap; /* no break names */
+}
+
+/* || GENERAL STYLE */
+html {
+  scroll-behavior: smooth; /* soft scroll behavior*/ 
+}
+
+body {
+  background-color: #1A1D1A;
+  min-height: 100vh;
+  background-image: radial-gradient(whitesmoke, #1A1D1A);
+  display:flex;
+  flex-direction: column;
+
+  font: 1.5rem "Press Start 2P", system-ui;
+  color: #03120E;
+}
+
+header, footer {
+  position: sticky; /* Keep position, don´t move */
+  background-color: #1E293B;
+  color: whitesmoke;
+  text-align: center;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: white;
+  padding: 0.5rem;
+  border-bottom: 2px solid #03120E;
+  font-weight: bolder;
+  
+  display: flex;
+  justify-content: space-evenly; /* space between a*/
+}
+
+nav a, nav a:visited {
+  color: black;
+}
+
+nav a:hover, nav a:focus {
+  color: #407076;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.container {
+  margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-content: space-evenly;
+}
+
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%), 350px;
+  background-color: #ABA8B2;
+  border: 3px solid #1E293B;
+  border-radius: 20px;
+  padding: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap; /* No break elements inside figure */
+}
+
+.card img {
+  border: 5px double #1E293B;
+  border-radius: 50%;
+}
+
+.card figcaption {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* || MEDIA QUERY */
+/* || SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap; /* all main elements wrap */
+    padding: 1rem;
+  }
+
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:last-child {
+    order: -1;
+  }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .card {
+    width: min(100%, 325px);
+  }
+
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  
+  .card p {
+    margin-top: 1rem;
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:nth-child(2) {
+    order: -1;
+  }
+}
+
+/* || XL */
+@media screen and (min-width: 1200px) {
+  .card {
+    width: min(calc(33% - 1rem), 500px); /* Mix units together, dynamic. 33% -1rem of 500px */
+  }
+}
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (min-height: 425px) and (min-aspect-ratio: 7/4){
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  
+  .card {
+    width: min(calc(33% - 0.25rem), 200px); /* Mix units together, dynamic. 33% -1rem of 500px */
+  }
+
+  .card figcaption, .card p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Media query: allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other features or characteristics such as screen resolution or orientation, aspect ratio, browser viewport width or height, user preferences such as preferring reduced motion, data usage, or transparency. */

@@ -1,0 +1,443 @@
+/*Se pueden usar el style CSS de otras páginas web, para copiar los colores, formas, transiciones, etc*/
+/*CSS box model: espacios dentro del elemento y fuera del elemento
+padding: usar siempre para los botones*/
+
+button.subcribe-button{
+  background-color: rgb(204, 0, 0);
+  font-size: 14px;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: opacity 0.15s;
+  vertical-align: top; 
+}
+/* pseudo class hover: agrega estilo extra en cierta situación*/
+button.subcribe-button:hover{
+  opacity: 0.8;
+}
+
+button.subcribe-button:active{
+  opacity: 0.4;
+}
+
+button.join-button{
+  background-color: white;
+  font-size: 12px;
+  color: rgb(6, 95, 212);
+  border-color: rgb(6, 95, 212);
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;   
+}
+
+button.join-button:hover{
+  background-color: rgb(6, 95, 212);
+  color: white;
+  transition: background-color 0.15s,
+    color 0.15s;
+}
+
+button.join-button:active{
+  opacity: 0.8;
+}
+
+button.tweet-button{
+  background-color: rgb(29, 155, 240);
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.tweet-button:hover{
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.15s;  
+}
+
+button.request-button{
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  border: none;
+  height: 35px;
+  width: 90;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.request-button:hover{
+  opacity: 0.8;
+  transition: 0.15s;
+}
+
+button.add-button{
+  background-color: rgb(255, 216, 20);
+  color: black;
+  font-size: 12px;
+  border: none;
+  border-radius: 18px;
+  height: 30px;
+  width: 150;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.add-button:hover{
+  background-color: rgb(231, 196, 17);
+  transition: 0.15s;
+}
+
+button.sign-button{
+  background-color: rgb(46, 164, 79);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.sign-button:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.15s;  
+}
+
+button.get-button{
+  background-color: rgb(121, 82, 179);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  width: 85;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.get-button:hover{
+  background-color: rgb(107, 71, 160);
+  transition: background-color 0.15s;
+}
+
+button.dowload-button{
+  background-color: white;
+  color: rgb(108, 117, 125);
+  font-size: 10px;
+  font-weight: bold;
+  border-color: rgb(108, 117, 125);
+  border-width: 0.5px;
+  border-radius: 3px;
+  height: 30px;
+  width: 85px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.dowload-button:hover{
+  background-color: rgb(108, 117, 125);
+  color: white;
+  transition: background-color 0.15s, 
+    color 0.15s;
+}
+
+button.apply-button{
+  background-color: rgb(10, 102, 194);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border:none;
+  border-radius: 18px;
+  height: 33px;
+  width: 200px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.apply-button:hover{
+  background-color: rgb(4, 84, 163);
+  transition: background-color 0.15s;
+}
+
+button.save-button{
+  background-color: white;
+  color: rgb(10, 102, 194);
+  font-size: 12px;
+  font-weight: bold;
+  border-color: rgb(10, 102, 194);
+  border-width: 1px;
+  border-radius: 18px;
+  height: 33px;
+  width: 65px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.save-button:hover{
+  background-color: rgb(224, 225, 230);
+  border-width: 2px;
+  transition: background-color 0.15s,
+    border-width 0.15s;
+}
+
+p.back-p{
+  color: rgb(0, 113, 133);
+  font-family: serif;
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p.nike-p{
+  color: black;
+  font-family: serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p.in-p{
+  color: rgb(0, 118, 0);
+  font-family: serif;
+  font-weight: bold;
+}
+
+p.free-p{
+  color: black;
+  font-family: serif;
+  font-weight: bold;
+}
+
+button.add2-button{
+  background-color: rgb(255, 216, 20);
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 18px;
+  height: 30px;
+  width: 130;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button.add2-button:hover{
+  background-color: rgb(221, 188, 21);
+  transition: background-color 0.15s;
+}
+
+button.add2-button:active{
+  opacity: 0.5;
+  cursor:wait;
+}
+
+button.buy-button{
+  background-color: rgb(255, 164, 28);
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 18px;
+  height: 30px;
+  width: 130;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+button.buy-button:hover{
+  background-color: rgb(224, 135, 0);
+  transition: background-color 0.15s;
+}
+
+button.buy-button:active{
+  opacity: 0.5;
+  cursor:wait;
+}
+
+button.back2-button{
+  font-size: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.one-button{
+  background-color: white;
+  font-size: 16px;
+  color: rgb(0, 113, 133);
+  border: none;
+  text-decoration: underline;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.two-button{
+  background-color: white;
+  font-size: 16px;
+  color: rgb(0, 113, 133);
+  border: none;
+  text-decoration: underline;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.three-button{
+  background-color: white;
+  font-size: 16px;
+  color: rgb(0, 113, 133);
+  border: none;
+  text-decoration: underline;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.four-button{
+  background-color: white;
+  font-size: 16px;
+  color: rgb(0, 113, 133);
+  border: none;
+  text-decoration: underline;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.five-button{
+  background-color: white;
+  font-size: 16px;
+  color: rgb(0, 113, 133);
+  border: none;
+  text-decoration: underline;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.next-button{
+  font-size: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.stretch-button{
+  background-color: green;
+  border: none;
+  font-size: 14px;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
+  cursor:pointer;
+  margin-right: 12px;
+  vertical-align: top;
+}
+
+button.stretch-button:hover{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 33px;
+  padding-right: 33px;
+  transition: 1s; 
+}
+
+button.shadow-button{
+  background-color: green;
+  border: none;
+  font-size: 14px;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
+  cursor:pointer;
+  margin-right: 12px;
+  vertical-align: top;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+button.shadow-button:active{
+  margin-left: 3px;
+  margin-top: 3px;
+  box-shadow: none;
+}
+
+button.stretch2-button{
+  background-color: green;
+  border: none;
+  font-size: 14px;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
+  cursor:pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+button.stretch2-button:hover{
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-left: 0px;
+  margin-right: 0px;
+  transition: 0.15s, 
+    margin 0.15s;
+}

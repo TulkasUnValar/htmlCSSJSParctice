@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Is not seen inside the browser --> 
+  <meta charset="UTF-8">
+  <meta name="author" content="Tulkas">
+  <meta name="description" content="This page contains all the things I am learning about HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Necessary to enable media queries in web pages-->
+  <title>Mini project: Profile Cards</title>
+  <link rel="stylesheet" href="CSS/styleCardProject.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+      <h1>Our Staff</h1>
+      <nav>
+        <a href="#profile1">Fox</a>
+        <a href="#profile2">Samus</a>
+        <a href="#profile3">Link</a>
+      </nav>
+  </header>
+
+  <main>
+    
+    <article id="profile1" class="card">
+      <figure>
+        <img src="img/fox-500x500.jpg" alt="Fox Coder" width="500" height="500">
+        <figcaption>Fox Coder</figcaption>
+      </figure>
+      <p>
+        <q>I code stuff.</q>
+      </p>
+    </article>
+
+    <article id="profile2" class="card">
+      <figure>
+        <img src="img/samusA-500x500.jpg" alt="Samus Designer" width="500" height="500">
+        <figcaption>Samus Designer</figcaption>
+      </figure>
+      <p>
+        <q>I design stuff.</q>
+      </p>
+    </article>
+
+    <article id="profile3" class="card">
+      <figure>
+        <img src="img/link-500x500.jpg" alt="Link Dev Rel" width="500" height="500">
+        <figcaption>Link <span class="nowrap">Dev Rel</span></figcaption>
+      </figure>
+      <p>
+        <q>I teach stuff.</q>
+      </p>
+    </article>
+  
+  </main>
+
+  <footer>
+    <p>&copy; Acme Co.</p>
+  </footer>
+
+</body>
+
+</html> 
+
+<!--Use validator.w3.org to HTML check. It looks errors or warnings to show.-->
